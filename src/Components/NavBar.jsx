@@ -14,7 +14,7 @@ const NavBar = () => {
     <>
       <header id="head">
         <div id="logo">
-          <Link to="/">
+          <Link to="/art-portfolio/">
             <h1>Randy's Art Portfolio</h1>
           </Link>
         </div>
@@ -42,16 +42,16 @@ const NavBar = () => {
       </header>
       <div className={`dropDown ${isActive ? 'drop-active' : 'not-active'}`}>
         <Link to='/art-portfolio/'>
-          <h3 className={location.pathname === '/' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Home</h3>
+          <h3 className={location.pathname === '/art-portfolio/' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Home</h3>
         </Link>
         <Link to='/art-portfolio/originals'>
-          <h3 className={location.pathname === '/originals' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Originals</h3>
+          <h3 className={location.pathname === '/art-portfolio/originals' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Originals</h3>
         </Link>
         <Link to='/art-portfolio/fanArt'>
-          <h3 className={location.pathname === '/fanArt' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Fan Art</h3>
+          <h3 className={location.pathname === '/art-portfolio/fanArt' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Fan Art</h3>
         </Link>
         <Link to='/art-portfolio/portraits'>
-          <h3 className={location.pathname === '/portraits' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Portraits</h3>
+          <h3 className={location.pathname === '/art-portfolio/portraits' ? 'currentFootNav' : ''} onClick={handleHamburgerClick}>Portraits</h3>
         </Link>
       </div>
       {/* <hr /> */}

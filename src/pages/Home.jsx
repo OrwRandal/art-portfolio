@@ -1,5 +1,12 @@
 import CategoryCard from "../Components/CategoryCard"
+import orig9 from '../assets/originals/orig9.jpg'
+import fanart2 from '../assets/fan-arts/fanart2.jpg'
+import port1 from '../assets/portraits/port1.jpg'
+import { useEffect } from "react"
 const Home = () => {
+  useEffect(()=>{
+    console.log(orig9)
+  },[])
   return (
     <>
       <section id="aboutMe">
@@ -19,9 +26,9 @@ const Home = () => {
       <div id='categoryHolder'>
         <h1 id='categoryTitle' className="bubble">Categories</h1>
         <div id="cardHolder">
-          <CategoryCard img='https://deadline.com/wp-content/uploads/2021/05/WBA_Superman_Image.jpg?w=1000' path='/originals' title='originals' />
-          <CategoryCard img='https://i.insider.com/649accc5867d960019d92aaa?width=700' path='/originals' title='Fan Art' />
-          <CategoryCard img='https://i0.wp.com/www.supermanhomepage.com/clickandbuilds/SupermanHomepage/wp-content/uploads/2023/06/MAWS-intro.jpg?fit=680%2C383&ssl=1' path='/originals' title='Portraits' />
+          <CategoryCard img={orig9} path='/art-portfolio/originals' title='originals' />
+          <CategoryCard img={fanart2} path='/art-portfolio/fanArt' title='Fan Art' />
+          <CategoryCard img={port1} path='/art-portfolio/portraits' title='Portraits' />
         </div>
       </div>
     </>
