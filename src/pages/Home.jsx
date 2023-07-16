@@ -26,9 +26,9 @@ const Home = () => {
       <div id='categoryHolder'>
         <h1 id='categoryTitle' className="bubble">Categories</h1>
         <div id="cardHolder">
-          <CategoryCard img={orig9} path='/art-portfolio/originals' title='originals' />
-          <CategoryCard img={fanart2} path='/art-portfolio/fanArt' title='Fan Art' />
-          <CategoryCard img={port1} path='/art-portfolio/portraits' title='Portraits' />
+          <CategoryCard img={orig9} path='/originals' title='originals' />
+          <CategoryCard img={fanart2} path='/fanArt' title='Fan Art' />
+          <CategoryCard img={port1} path='/portraits' title='Portraits' />
         </div>
       </div>
     </>
