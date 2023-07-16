@@ -2,6 +2,7 @@ import CategoryCard from "../Components/CategoryCard"
 import orig9 from '../assets/originals/orig9.jpg'
 import fanart2 from '../assets/fan-arts/fanart2.jpg'
 import port1 from '../assets/portraits/port1.jpg'
+import headShot from '../assets/headShot.jpg'
 import { useEffect } from "react"
 const Home = () => {
   useEffect(()=>{
@@ -10,7 +11,7 @@ const Home = () => {
   return (
     <>
       <section id="aboutMe">
-        <img src="src/assets/headShot.jpg" id="me"></img>
+        <img src={headShot} id="me"></img>
         <div id="meText">
           <div id='meanwhile'>
             <h1><span style={{ fontSize: '3rem', color: 'red' }}>W</span>ho Is Randy...</h1>
