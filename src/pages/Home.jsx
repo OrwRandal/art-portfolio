@@ -1,7 +1,7 @@
 import CategoryCard from "../Components/CategoryCard"
-import orig9 from '../assets/originals/orig9.jpg'
-import fanart2 from '../assets/fan-arts/fanart2.jpg'
-import port1 from '../assets/portraits/port1.jpg'
+import orig9 from '../assets/originals/orig9.webp'
+import fanart2 from '../assets/fan-arts/fanart2.webp'
+import port1 from '../assets/portraits/port1.webp'
 import headShot from '../assets/headShot.jpg'
 import { useEffect } from "react"
 const Home = () => {
