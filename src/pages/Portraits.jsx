@@ -7,31 +7,12 @@ import port6 from '../assets/portraits/port6.webp'
 import port7 from '../assets/portraits/port7.webp'
 import port8 from '../assets/portraits/port8.webp'
 import port9 from '../assets/portraits/port9.webp'
-import { useState } from 'react'
-import Modal from '../Components/Modal'
-import ImageLister from '../Components/ImageLister'
+import Gallery from '../Components/Gallery'
 const Portraits = () => {
   const images = [port1, port2, port3, port4, port5, port6, port7, port8, port9];
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currImg, setCurrImg] = useState(port1)
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleClick = (e) => {
-    setCurrImg(e.target.id)
-    openModal()
-  }
   return (
     <>
-      <ImageLister images={images} handleClick={handleClick} />
-      <div>
-        <Modal isOpen={isModalOpen} onClose={closeModal} img={currImg} />
-      </div>
+      <Gallery images={images}/>
     </>
   )
 }

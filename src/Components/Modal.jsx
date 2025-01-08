@@ -1,4 +1,4 @@
-const Modal = ({ isOpen, onClose, img }) => {
+const Modal = ({ isOpen, onClose}) => {
     // Render nothing if the modal is not open
     if (!isOpen) {
         return null;
@@ -7,7 +7,7 @@ const Modal = ({ isOpen, onClose, img }) => {
     return (
         <div className="modal">
             <div className="modal-content">
-                <img src={img} />
+                <img src={isOpen} />
             </div>
             <div className="close-button" onClick={onClose}>
                 <h4>Close</h4>

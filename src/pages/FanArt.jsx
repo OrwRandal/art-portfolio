@@ -7,32 +7,11 @@ import fanart6 from '../assets/fan-arts/fanart6.webp'
 import fanart7 from '../assets/fan-arts/fanart7.webp'
 import fanart8 from '../assets/fan-arts/fanart8.webp'
 import fanart9 from '../assets/fan-arts/fanart9.webp'
-import { useState } from 'react'
-import ImageLister from '../Components/ImageLister'
-import Modal from '../Components/Modal'
+import Gallery from '../Components/Gallery'
 const FanArt = () => {
   const images = [fanart1, fanart2, fanart3, fanart4, fanart5, fanart6, fanart7, fanart8, fanart9];
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currImg, setCurrImg] = useState(fanart1)
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleClick = (e) => {
-    setCurrImg(e.target.id)
-    openModal()
-  }
   return (
-    <>
-      <ImageLister images={images} handleClick={handleClick} />
-      <div>
-        <Modal isOpen={isModalOpen} onClose={closeModal} img={currImg} />
-      </div>
-    </>
+    <Gallery images={images}/>
   )
 }
 

@@ -7,33 +7,12 @@ import orig6 from '../assets/originals/orig6.webp'
 import orig7 from '../assets/originals/orig7.webp'
 import orig8 from '../assets/originals/orig8.webp'
 import orig9 from '../assets/originals/orig9.webp'
-import { useState } from 'react'
-import Modal from '../Components/Modal'
-import ImageLister from '../Components/ImageLister'
+import Gallery from '../Components/Gallery'
 const Originals = () => {
   const images = [orig1, orig2, orig3, orig4, orig5, orig6, orig7, orig8, orig9];
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currImg, setCurrImg] = useState(orig1)
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleClick = (e) => {
-    setCurrImg(e.target.id)
-    openModal()
-  }
 
   return (
-    <>
-      <ImageLister images={images} handleClick={handleClick}/>
-      <div>
-        <Modal isOpen={isModalOpen} onClose={closeModal} img={currImg} />
-      </div>
-    </>
+    <Gallery images={images}/>
   )
 }
 
