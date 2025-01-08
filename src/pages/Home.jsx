@@ -5,9 +5,6 @@ import port1 from '../assets/portraits/port1.webp'
 import headShot from '../assets/headShot.jpg'
 import { useEffect } from "react"
 const Home = () => {
-  useEffect(()=>{
-    console.log(orig9)
-  },[])
   return (
     <>
       <section id="aboutMe">
@@ -16,7 +13,7 @@ const Home = () => {
           <div id='meanwhile'>
             <h1><span style={{ fontSize: '3rem', color: 'red' }}>W</span>ho Is Randy...</h1>
           </div>
-          <p>Hi, my name is Randy. I am 19 years old and I've always had an obsession with anything that enables me to be
+          <p>Hi, my name is Randy. I am {new Date().getFullYear() - 2004} years old and I've always had an obsession with anything that enables me to be
             creative. When I was younger, Even without any skill, I always doodled on my homework and notes. It even
             caused me to get into trouble a few times, but it never stopped being fun. Every career that piqued my
             interest, whether it was photography, graphic design, or even now, Software Engineering, has allowed me to
